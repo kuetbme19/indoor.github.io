@@ -5,8 +5,64 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Additional meta tags and external stylesheets/scripts can be added here -->
+	<style>
+		/* Set the height and width of the iframe */
+		iframe {
+		  height: 700px;
+		  width: 80%;
+		  /* Center the iframe horizontally */
+		  margin: 0 0;
+		  /* Center the iframe vertically */
+		  position:absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  overflow: hidden;
+		  }
+	iframe::-webkit-scrollbar {
+  display: none;
+     }
+		  
+  /* Set the initial background color */
+  body {
+    background-color: #1abc9c;
+    transition: background-color 2s ease;
+  }
+  
+  /* Define the keyframes for the color changing animation */
+  @keyframes color-change {
+    0% {
+      background-color: #fefefe;
+    }
+    25% {
+      background-color: #b8bcb9;
+    }
+    50% {
+      background-color: #7b7b7b;
+    }
+    75% {
+      background-color: #616161;
+    }
+    100% {
+      background-color: #000000;
+    }
+  }
+  
+  /* Apply the animation to the background */
+  body {
+    animation: color-change 10s infinite alternate;
+  }
+
+
+
+
+		</style>
 </head>
 <body>
-	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDqEFjNIIPiKA-szbuBdJWF7JT9d4k7jJ1QzXUzcXSdWT8pg/viewform?embedded=true" width="350" height="750" frameborder="-10" marginheight="0" marginwidth="0">Loading…</iframe>
+	<audio autoplay loop>
+		<source src="indoor.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDqEFjNIIPiKA-szbuBdJWF7JT9d4k7jJ1QzXUzcXSdWT8pg/viewform?embedded=true" width="350" height="750" frameborder="-10" marginheight="0" marginwidth="0" >Loading…</iframe>
 </body>
 </html>
